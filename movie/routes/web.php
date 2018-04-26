@@ -11,7 +11,38 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/check_user', [
+	'uses'=>"RoutesController@index", 
+	'as'=>'check_user'
+]);
+
+Route::get("/admin/index", [
+	'uses'=>"AdminController@index",
+	'as'=>"admin.index"
+]);
+
+Route::post("admin/update/{id}", [
+	'uses'=>"AdminController@update", 
+	'as'=>"admin.update"
+]);
+
+Route::get("admin/users", [
+	'uses'=>"AdminController@users",
+	'as'=>"admin.users"
+]);
+
+Route::get("/user/index", [
+	'uses'=>"UsersController@index",
+	'as'=>"user.index"
+]);
+
+Route::get('user/profile/{id}', [
+	'uses'=>"RoutesController@profile", 
+	'as'=>"profile"
+]);
