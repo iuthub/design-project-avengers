@@ -9,7 +9,7 @@
 		var settings = {
 		  "async": true,
 		  "crossDomain": true,
-		  "url": "https://api.themoviedb.org/3/movie/popular?page=1&language=en-US&api_key=cd5b98697cc656b6f9d993276b6ddec5",
+		  "url": "https://api.themoviedb.org/3/movie/upcoming?api_key=cd5b98697cc656b6f9d993276b6ddec5&language=en-US&page=1",
 		  "method": "GET",
 		  "headers": {},
 		  "data": "{}"
@@ -29,7 +29,7 @@
 
 		  	$.ajax(movie_video).done(function(movie){
 		  		$('.movies').append(
-		  			"<div class='card' style='width: 100%;'><div class='card-body'><h5 class='card-title'>"+ response.results[i].title +"</h5><p class='card-text'>"+response.results[i].overview+"</p><a href='http://www.youtube.com/watch?v="+movie.results[0].key+"' class='btn btn-primary'>Go somewhere</a></div></div>"
+		  			"<div class='card' style='width: 100%;'><div class='card-body'><h5 class='card-title'>"+ response.results[i].title +"</h5><p class='card-text'>"+response.results[i].overview+"</p><a href='http://www.youtube.com/watch?v="+movie.results[0].key+"' class='btn btn-primary'>Watch</a></div></div>"
 		  		);
 		  		// console.log(movie);
 		  	});

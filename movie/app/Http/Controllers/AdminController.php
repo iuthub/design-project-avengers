@@ -12,7 +12,7 @@ class AdminController extends Controller
     // return admin view
     public function index()
     {
-        return view("admin.index");
+        return view("admin.index")->with('user', Auth::user());
     }
 
     // update Profile

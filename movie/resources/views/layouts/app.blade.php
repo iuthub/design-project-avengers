@@ -26,9 +26,11 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+                @if(Auth::check())
+                    @if(Auth::user()->admin)
+                        <a href="{{ route('admin.index') }}">UMD</a>
+                    @endif
+                @endif
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,13 +85,7 @@
                                         <a href="{{ route('admin.movies') }}">Movies</a>
                                     </li>
                                     <li class="list-group-item">
-                                        <a href="">TV Series</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="">Playlists</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="">New Arrivals</a>
+                                        <a href="{{ route("admin.latest_movies") }}">New Arrivals</a>
                                     </li>
                                     @if(Auth::user()->admin)
                                         <li class="list-group-item">

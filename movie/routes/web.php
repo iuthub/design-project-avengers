@@ -15,7 +15,7 @@ Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/check_user', [
 	'uses'=>"RoutesController@index", 
@@ -70,4 +70,24 @@ Route::get('user/profile/{id}', [
 Route::get('admin/movies', [
 	'uses'=>"AdminController@movies",
 	'as'=>'admin.movies'
+]);
+
+Route::get('new_releases', [
+	'uses'=>"RoutesController@new_releases",
+	'as'=>"new_releases"
+]);
+
+Route::get("latest_movie", [
+	'uses'=>'RoutesController@latest_movie', 
+	'as'=>'latest_movie'
+]);
+
+Route::get("admin/latest_movie", [
+	"uses"=>"RoutesController@admin_latest_movies",
+	'as'=>"admin.latest_movies"
+]);
+
+Route::post("register/user", [
+	'uses'=>"RoutesController@register_user", 
+	'as'=>"register_user"
 ]);
