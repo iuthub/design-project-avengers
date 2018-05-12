@@ -18,128 +18,7 @@
     </style>
 </head>
 <body class="ishome">
-    <header>
-        <div class="wrapper">
-            <div id="brand">
-                <img src="{{ asset("img/LOGO2.png") }}" alt="logo"/>
-            </div>
-            <nav id="top_nav">
-                <ul id="menu">     
-                    <li class="nav-width">
-                        <a href="{{ route('welcome') }}" class="underline">Home</a>
-                    </li>
-                    <li class="nav-width">
-                        <a href="{{ route('latest_movie') }}">Upcoming</a>
-                    </li>
-                    <li class="nav-width">
-                        <a href="{{ route("new_releases") }}">Most Popular</a>                   
-                    </li>
-                    <li class="nav-width">
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-<!--hamburger-->
-                <div id="toggle">
-                        <div class="span" id="one"></div>
-                </div>
-            </nav>
-            <div class="login">
-                <a onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display='none';" href="#" class="btn btn-success">Login</a>
-                <div id="id01" class="modal">
-                    <form class="model-content animate" action="{{ route("login") }}" method='POST'>
-                        @csrf
-                        <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'"  class="close" title="Close Modal">&times;</span>
-                            <img src="img/avatar1.png" alt="Avatar" class="avatar">
-                        </div>                        
-                        <div class="log-content">
-                            <input type="text" placeholder="Enter Username" name="email" required/>
-                            <input type="password" placeholder="Enter Password" name="password" required/>
-                            <div class="btn-pos">
-                                <button type="submit" value="Login">
-                                    Login
-                                </button>
-                            </div>
-                        </div>      
-                    </form>
-                </div>
-            </div>
-            <div class="register">
-                <a onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none';" href="#" class="btn btn-success">Register</a>
-                <div id="id02" class="modal">
-                    <form class="model-content animate" action="{{ route("register_user") }}" method='POST'>
-                        @csrf
-                        <div class="imgcontainer">
-                            <span onclick="document.getElementById('id02').style.display='none' "  class="close" title="Close Modal">&times;</span>
-                            <img src="img/avatar1.png" alt="Avatar" class="avatar">
-                        </div>                        
-                        <div class="log-content">
-                            <input type="text" name="first_name" placeholder="Enter First Name">
-                            <input type="text" name="last_name" placeholder="Enter Last Name">
-                            <input type="text" placeholder="Enter Email" name="email" required/>
-                            <input type="password" placeholder="Enter Password" name="password" required/>
-                            <div class="btn-pos">
-                                <button type="submit" value="Login">
-                                    Login
-                                </button>
-                            </div>
-                        </div>      
-                    </form>
-                </div>
-            </div>
-        </div>
- 
-        <div id="resize">
-        <!--start resizing-->
-                <ul id="menu">
-                    <li  class="nav-width">
-                        <a href="{{ route('welcome') }}" class="underline">Home</a>                     
-                    </li>
-                    <hr>
-                    <li class="nav-width">
-                        <a href="{{ route('latest_movie') }}">Upcoming</a>
-                    </li>
-                    <hr>
-                    <li class="nav-width">
-                        <a href="{{ route("new_releases") }}">Most Popular</a>        
-                    </li>
-                    <hr>
-                    <li class="nav-width">
-                        <a href="#">FAQS</a>    
-                    </li>
-                    <hr>
-                    <li class="nav-width">
-                        <a onclick="document.getElementById('id02').style.display='block'" href="#" class="btn btn-success">Sign In</a>               
-                        <div id="id02" class="modal">
-
-                            <form class="model-content animate" action="/dilmurod_miwka.php">
-                                <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id02').style.display='none' "  class="close" title="Close Modal">&times;</span>
-                                    <img src="{{ asset("img/avatar1.png") }}" alt="Avatar" class="avatar">
-                                </div>
-                  
-                                <div class="log-content">
-                                        <input type="text" placeholder="Enter Username" name="uname" required />
-                                        <input type="password" placeholder="Enter Password" name="psw" required />
-                                        <div class="btn-pos">
-                                            <button type="submit" value="Login">
-                                                Login
-                                            </button>
-                                        </div>
-                                        <label>
-                                            <input type="checkbox" checked="checked" name="remember"> Remember me       
-                                        </label>                    
-                                        <div>
-                                            <a href="#">Forgot password?</a></span>
-                                         </div>  
-                                </div>      
-                            </form>
-                        </div>
-                    </li>
-                </ul>
-<!--end resizing-->   
-        </div>
-    </header>
+    @include("layouts.header", ['home'=>'1'])
 
 <!--Start homepage content-->
     <div class="main-image">
@@ -160,8 +39,8 @@
                 <div class="item active">
                     <img src="{{ asset('img/ian_somerhalder_man_celebrity_brunette_lying_29869_1920x1080.jpg') }}" alt="something">
                     <div class="carousel-caption">
-                        <div class="text">
-                            <h2>Welcome to UMD</h2>
+                        <div class="text col-md-8 offset-md-2">
+                            <h1 class='text-white'>Welcome to UMD</h1>
                             <p>Watch the largest collection of Movies and TV series anytime anywhere!</p>
                         </div>
                     </div>
@@ -170,7 +49,7 @@
                     <img src="{{ asset("img/emma_watson_5k-HD.jpg") }}">
                     <div class="carousel-caption">
                         <div class="text">
-                            <h2>Welcome to UMD</h2>
+                            <h1 class='text-white'>Welcome to UMD</h1>
                             <p>Watch the largest collection of Movies and TV series anytime anywhere!</p>       
                         </div>
                     </div>
@@ -179,8 +58,7 @@
                     <img src="{{ asset("img/thumb-1920-148910.jpg") }}">
                     <div class="carousel-caption">
                         <div class="text">
-                            <h1>Welcome to</h1>
-                            <h1>UMD</h1>
+                            <h1 class='text-white'>Welcome to</h1>
                             <p>Watch the largest collection of Movies and TV series anytime anywhere!       </p>
                         </div>
                     </div>  
@@ -370,9 +248,34 @@
         </div><!--end container-->
     </footer>
 
-    <script type="text/javascript" src="{{ asset("js/jquery.min.js") }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset("js/jquery.min.js") }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset("js/js.js") }}"></script>
     <script src="{{ asset("js/preloader.js") }}"></script>
+
+
+    <script type="text/javascript">
+        var now_playing = {
+            "async": true,
+            "crossDomain": true,
+            // "url": "https://api.themoviedb.org/3/movie/latest?language=en-US&api_key=cd5b98697cc656b6f9d993276b6ddec5",
+            "url": "https://api.themoviedb.org/3/movie/now_playing?api_key=cd5b98697cc656b6f9d993276b6ddec5&language=en-US&page=1",
+            "method": "GET",
+            "headers": {},
+            "data": "{}"
+        }
+
+        $.ajax(now_playing).done(function(movies_now){
+            // console.log(movies_now);
+            var items_img = $('.item img');
+            var items_title = $(".item h1");
+            var items_desc = $(".item p");
+            for(var i=0;i<items_img.length;i++){
+                items_img[i].src = "https://image.tmdb.org/t/p/original/"+movies_now.results[i].poster_path;
+                items_title[i].innerHTML = movies_now.results[i].title;
+                items_desc[i].innerHTML = movies_now.results[i].overview;
+            }   
+        });
+    </script>
 </body>
 </html>

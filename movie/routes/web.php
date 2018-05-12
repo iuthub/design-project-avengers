@@ -91,3 +91,8 @@ Route::post("register/user", [
 	'uses'=>"RoutesController@register_user", 
 	'as'=>"register_user"
 ]);
+
+Route::post("movie_add", [
+	'uses'=>"AdminController@movie_add",
+	'as'=>'movie_add'
+]);

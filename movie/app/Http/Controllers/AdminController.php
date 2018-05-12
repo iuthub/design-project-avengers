@@ -9,6 +9,8 @@ use App\User;
 
 class AdminController extends Controller
 {
+    public static $movies = array();
+
     // return admin view
     public function index()
     {
@@ -62,7 +64,6 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
-
 
     //movies
     public function movies(){
