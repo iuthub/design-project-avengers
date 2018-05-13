@@ -5,6 +5,7 @@ Find `ip_design_project.pdf` file in this folder, and refer to all the instructi
 You have to submit your project into this repository before 06.05.2018.
 
 `TEAM NAME`: Avengers
+
 `TEAM MEMBERS`:
 1) Malika Sadullaeva: U1610193
 2) Farangiz Nurmukhamedova: U1610067
@@ -14,4 +15,4 @@ You have to submit your project into this repository before 06.05.2018.
 
 `LINK TO HOST`: https://umdcom.000webhostapp.com/
 
-`LINK TO REPORT` : 
+`LINK TO REPORT` : https://github.com/iuthub/design-project-avengers/raw/master/project_report.pdf
