@@ -92,7 +92,17 @@ Route::post("register/user", [
 	'as'=>"register_user"
 ]);
 
-Route::post("movie_add", [
-	'uses'=>"AdminController@movie_add",
-	'as'=>'movie_add'
+Route::get("users/home",[
+	'uses'=>"RoutesController@users_index",
+	'as'=>'users_index'
+]);
+
+Route::get("users/movies",[
+	'uses'=>"RoutesController@users_movies",
+	'as'=>'users_movies'
+]);
+
+Route::get("users/movies/coming",[
+	'uses'=>"RoutesController@users_coming_movies",
+	'as'=>'users_comings'
 ]);

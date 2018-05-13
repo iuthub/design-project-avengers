@@ -32,7 +32,7 @@
 		  			$('.movies').append(
 			  			"<div class='card' style='width: 100%;'><div class='card-body'><h5 class='card-title'>"+ response.results[i].title +"</h5><p class='card-text'>"+response.results[i].overview+"</p><a href='http://www.youtube.com/watch?v="+movie.results[0].key+"' class='btn btn-primary'>Watch</a></div></div>"
 			  		);
-		  		}
+					}
 		  		// console.log(movie);
 		  	});
 

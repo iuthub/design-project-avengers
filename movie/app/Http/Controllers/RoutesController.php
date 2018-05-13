@@ -39,6 +39,13 @@ class RoutesController extends Controller
     }
 
     public function register_user(Request $request){
+        $request->validate([
+            'first_name' => 'required|max:255',
+            'last_name' => 'required|max:255',
+            'email' => 'required|unique:users|email|max:255',
+            'password' => 'required|max:255'
+        ]);
+
         $user = new User();
 
         $user->first_name = $request->first_name;
@@ -52,7 +59,18 @@ class RoutesController extends Controller
 
         if (Auth::attempt($credentials)) {
             return redirect()->route('user.index')->with("user", $user);
-        }
-        
+        }   
+    }
+    
+    public function users_index(){
+        return view('users.index');
+    }
+
+    public function users_movies(){
+        return view('users.movies');
+    }
+
+    public function users_coming_movies(){
+        return view('users.comings');
     }
 }

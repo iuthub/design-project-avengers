@@ -1,0 +1,570 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat" ,cursive, sans-serif;
+}
+a{
+	text-decoration: none;
+	font-family: Montserrat,sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+	 color: #333;
+	 font-family: Montserrat,sans-serif;
+}
+p{
+	font-family: Montserrat,sans-serif;
+}
+ul{
+	list-style-type: none;
+}
+/*carousel styling*/
+.carousel-control.left , .carousel-control.right{
+	background-image: none;
+	height: 10px;
+}
+
+
+.carousel-control{
+	position: absolute;
+	top:50%;
+	text-align: center;
+	z-index: 0;
+	display: inline-block;
+}
+
+/****************************/
+.carousel-caption{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.caraosel-caption h3,p{
+	position: relative;
+	text-shadow: none;
+	font-family: 'Roboto';
+}
+.carousel-slide{
+	position: relative;
+}
+.carousel-inner .item{
+	height: 100vh;
+}
+
+nav{
+	width: 100%;
+	height: 70px;
+	position: static;
+	z-index: 1;	
+}
+.nav-width{
+	margin-top: 10px;
+}
+
+nav #brand{
+	float: left;
+	display: block;
+	margin-left: 40px;
+}
+nav #brand a{
+	transition: all 0.3s ease-out;
+	font-family: "Poppins";
+}
+nav #menu{
+	float: left;
+	left: 10px;
+	top:10px;
+	position: relative;
+}
+nav #menu li{
+	display: inline-block;
+	padding: 0px 30px;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s ease-out;
+}
+
+
+/*for hamberger */
+#toggle{
+	position: absolute;
+	right: 20px;
+	top:10px;
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	float: right;
+	transition: all 0.3s ease-out;
+	visibility: hidden;
+	opacity: 0;
+
+}
+
+#toggle .span{
+	height: 3px;
+	background-color: #00AB19;
+	background: #00AB19;
+	-webkit-backface-visibility: visible;
+	backface-visibility: hidden;
+	margin: 5px auto;
+}
+
+/*cсоздаем крестик гамбургер*/
+
+#toggle.on #one{
+	transform: rotate(45deg) translateX(2px) translateY(8px);
+
+}
+#toggle.on #two{
+	opacity: 0;
+} 
+
+#toggle.on #three{
+	transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+
+/*открываем гамбургер и диспоеем элементы*/
+#resize{
+	z-index: 1;
+	top: 0px;
+	display: none;
+}
+
+
+#resize #menu li{
+	display: table;
+	margin:0 auto;
+	line-height: 50px;
+	font-size: 10px;
+	cursor: pointer;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    opacity: 1;
+    color: green;
+} 
+
+
+#resize #menu li a{
+	color: black;
+
+}
+#resize #menu li:nth-child(5){
+	float: none;
+}
+
+
+ul li a{
+	text-decoration: none;
+	font-size: 10px;
+
+}
+
+.underline{
+	border-bottom: 3px solid #00AB19;
+}
+
+a.nav-width:hover{
+border-bottom: 3px solid #00AB19;
+text-decoration: none;
+color: #272727
+}
+
+li:nth-child(5){
+	float: right;
+	margin-left: 200px;
+}
+
+header nav li a{
+	text-decoration: none;
+	color: #272727;
+	font-size: 15px;
+	cursor: pointer;
+	line-height: 1;
+}
+/*img div*/
+.image-div{
+	width: 100%;
+}
+/*text div*/
+.text-div{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+}
+
+section.content div p{
+	font-size: 15px;
+	font-family: Lato,sans-serif;
+    line-height: 1.8;
+    color: #555;
+}
+
+/*For watch on any debiceS*/
+.w{
+	border-bottom: 4px solid green;
+	width: 20%;
+	height: 5px;
+	border-radius: 5px;
+	bottom: 0;
+	display: block;
+	margin-bottom: 20px;
+}
+.pos{
+	position: absolute;
+}
+/*For paddinng all blocks in HP from top*/
+.mrg-top{
+	padding-top: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.btn{
+	padding: 10px 15px;
+	background-color: #F9F9F9;	
+	border: 1px solid #757575;
+	color: #757575;
+}
+/*input stilization*/
+.modal input[type=text], input[type=password]{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    margin: 20px;
+}
+.modal button[type=submit]{
+	border: none;
+	outline: none;
+	background:#1c8adb; 
+	color:#fff;
+	font-size: 10px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	background-color: #00AB19;
+	width: 105px;
+}
+
+.btn-pos{
+	/*margin-left: 20px;*/
+	position: relative;
+	/*margin-left: 28%;*/
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.avatar {
+    width: 40%;
+   border-radius: 50%;
+}
+.log-content {
+    padding: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    margin:0 auto;
+    top:50px;
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/*ERRROOOOOOOOOOOOOOOOOOOOR*/
+.active{
+	width: 100%;
+}
+.close:hover,
+.close:focus {
+    color: green;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+
+/*animate text*/
+.text h2 p{
+	opacity: 0;
+}
+.text .text1{
+	transform: translate3d(-60px,0,0);
+}
+
+.text .text2{
+	transform: translate3d(60px,0,0);
+}
+
+/*Price and plans*/
+
+
+aside>div>h2{
+	/*text-align: center;*/
+	margin-top: 80px;
+}
+div.w{
+	margin: auto;
+	width: 50px;
+}
+ul.price{
+list-style-type: none;
+margin-top: 50px;
+box-sizing: border-box;
+}
+ul.price>li::before{
+     content:"\2714\0020";
+	 color: #008000;
+}
+
+/*end price and plans*/
+
+/*table price*/
+.size{
+	font-size: 50px;
+}
+.table-price{
+	margin-top:60px;
+	background-image:url(img/bgK.jpg);
+	background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+.table-price li{
+	color: #7A7A7A;
+	font-weight: 300;
+    margin-bottom: 20px;
+    
+}
+.burron{
+	text-align: center;	
+	margin-top: 30px;
+}
+.table-price{
+	text-align: center;
+}
+.starter{
+	text-align: center;
+}
+.size{
+	text-align: center;
+}
+.table-price h2{
+	color: #008000;
+}
+
+.table-price li:nth-child(1){
+	margin-left:0.8em;
+}
+.table-price ul{
+		margin-top: 20px;
+	}
+
+.btn1{
+	font-weight: 400;
+    padding: 12px 20px;
+    font-size: 13px;
+    border: 1px solid #e7e7e7;
+    background: #f9f9f9;
+    color: #666;
+}
+
+h2 span{
+	font-weight: 400;
+	 color: #7A7A7A;
+	 font-size: 14px;
+}
+
+.border{
+	border: 1px solid rgba(0,0,0,.05);
+	border-radius: 10px;
+   
+-webkit-box-shadow: 0 15px 30px rgba(0,0,0,.8); /* Safari & Chrome */
+-moz-box-shadow:0 15px 30px rgba(0,0,0,.8); /* Firefox */
+-o-box-shadow:0 15px 30px rgba(0,0,0,.8); /* Opera */
+ box-shadow:0 15px 30px rgba(0,0,0,.8);
+}
+
+/*color for middle button*/
+.clr{
+	background-color: #3DB13D;
+}
+/*end table price*/
+
+
+/*footer*/
+
+.footer{
+		margin-top: 100px;
+	    border-top: 1px solid rgba(0,0,0,.09);
+}
+.copyright {
+padding: 25px 0;
+}
+
+ul.social-net{
+	float: right;
+}
+
+ul.social-net li{
+	display: inline-block;
+	padding: 25px 10px;
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+
+/*end footer*/
+
+
+
+@media screen and (max-width:1200px){
+	
+	#toggle{
+		visibility: visible;
+		opacity: 1;
+		margin-top: 5px;
+	}
+	nav #brand{
+		margin-left: 18px;
+	}
+	#menu a{
+		font-family: "Poppins";
+		font-size: 20px;
+	}
+	nav #menu{
+		display: none;
+	}
+.carousel-inner .item{
+	height: 40vh;
+   }
+
+   li:nth-child(5){
+   	margin-left: 100px;
+   }
+   header nav li a{
+   	font-size: 10px;
+   }
+   
+}  
+
+@media(min-width: 1200px){
+	#resize{
+		visibility: hidden !important;
+	}
+
+   li:nth-child(5){
+   	margin-left: 100px;
+   }
+
+  
+}
+
+

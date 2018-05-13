@@ -60,7 +60,7 @@
                             <input type="password" placeholder="Enter Password" name="password" required/>
                             <div class="btn-pos">
                                 <button type="submit" value="Login">
-                                    Login
+                                    Register
                                 </button>
                             </div>
                         </div>      

@@ -37,7 +37,8 @@
 
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="{{ asset('img/ian_somerhalder_man_celebrity_brunette_lying_29869_1920x1080.jpg') }}" alt="something">
+                    {{-- <img src="{{ asset('img/ian_somerhalder_man_celebrity_brunette_lying_29869_1920x1080.jpg') }}" alt="something"> --}}
+                    <img alt="something">
                     <div class="carousel-caption">
                         <div class="text col-md-8 offset-md-2">
                             <h1 class='text-white'>Welcome to UMD</h1>
@@ -46,7 +47,8 @@
                     </div>
                 </div>            
                 <div class="item">
-                    <img src="{{ asset("img/emma_watson_5k-HD.jpg") }}">
+                    {{-- <img src="{{ asset("img/emma_watson_5k-HD.jpg") }}"> --}}
+                    <img>
                     <div class="carousel-caption">
                         <div class="text">
                             <h1 class='text-white'>Welcome to UMD</h1>
@@ -55,7 +57,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="{{ asset("img/thumb-1920-148910.jpg") }}">
+                    {{-- <img src="{{ asset("img/thumb-1920-148910.jpg") }}"> --}}
+                    <img>
                     <div class="carousel-caption">
                         <div class="text">
                             <h1 class='text-white'>Welcome to</h1>
@@ -88,6 +91,12 @@
                         <div class="text-div col-md-6">
                             <h2>Watch On Any Device</h2>
                             <p class=w></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="learn-more">
                                 <a class="btn btn-success" href="{{ route("new_releases") }}">Start Watching</a>
                             </div>
@@ -104,6 +113,12 @@
                         <div class="text-div col-md-6">
                             <h2 class="watch">Make Your Own Playlist</h2>
                             <p class=w></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <p>
                                 <a class="btn btn-success" href="{{ route("new_releases") }}">Start Watching</a>
                             </p>
@@ -128,6 +143,12 @@
                         <div class="text-div col-md-6">
                             <h2 class="watch">Watch in Ultra HD</h2>
                             <p class=w></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <p>
                                 <a class="btn btn-success" href="{{ route('new_releases') }}">Start Watching</a>
                             </p>
