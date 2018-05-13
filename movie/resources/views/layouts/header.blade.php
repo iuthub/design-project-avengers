@@ -15,7 +15,7 @@
                         <a href="{{ route("new_releases") }}" @if($home=='3') class="underline" @endif>Most Popular</a>                   
                     </li>
                     <li class="nav-width">
-                        <a href="#">Contact US</a>
+                        <a href="{{ route('contactPage') }}" @if ($home == '4') class="underline" @endif>Contact US</a>
                     </li>
                 </ul>
 <!--hamburger-->
@@ -85,7 +85,7 @@
                     </li>
                     <hr>
                     <li class="nav-width">
-                        <a href="#">Contact US</a>    
+                        <a href="{{ route('contactPage') }}">Contact US</a>    
                     </li>
                     <hr>
                     <li class="nav-width">

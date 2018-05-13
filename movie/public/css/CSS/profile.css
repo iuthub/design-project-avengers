@@ -12,7 +12,7 @@
 	}
 	a{
 		text-decoration: none;
-		font-family: Montserrat,sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 	ul{
 		list-style-type: none;
@@ -83,7 +83,7 @@
 	p{
 		padding: 10px 0;
 		font-size: 16px;
-		font-family: "Montserrat" ,cursive, sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 	.nav-i li a span:hover{
 		color: #7FCB7F;
@@ -290,7 +290,7 @@ h4.heading-margin-bottom, h5.heading-margin-bottom, h6.heading-margin-bottom {
     font-weight: 700;
     color: #333;
     margin-bottom: .6rem;
-    font-family: Montserrat,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .row {
@@ -352,7 +352,7 @@ h4.heading-margin-bottom, h5.heading-margin-bottom, h6.heading-margin-bottom {
     text-align: center;
     font-size: 11px;
     font-weight: 400;
-    font-family: Montserrat,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .item-listing-container img {

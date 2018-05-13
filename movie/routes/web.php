@@ -106,3 +106,9 @@ Route::get("users/movies/coming",[
 	'uses'=>"RoutesController@users_coming_movies",
 	'as'=>'users_comings'
 ]);
+
+//Email
+Route::get('/contact', function () {
+    return view('contact.contact');
+})->name('contactPage');
+Route::post('/contact', 'RoutesController@postContact');
