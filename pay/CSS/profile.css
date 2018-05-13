@@ -141,6 +141,9 @@ li.ham i{
 	    text-transform: uppercase;
 	    line-height: 3;
 	}
+
+
+	/*for centrilizing content in dropdown*/
 /*.container{
 	padding-right: 50px;
 	padding-left: 50px;
@@ -330,6 +333,68 @@ h6{
 .border-on{
 	border: 3px solid #3db13d;
 }
+
+
+/*top right corner*/
+
+		.name-icon{
+			float: right;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		
+		#besit{
+			float: right;
+			padding-right: 25px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 4px;
+		}
+
+
+
+ul#profile-support{
+		margin: 0;
+		padding: 0;
+		background: #fff;
+		opacity: 1;
+		padding: 0;
+		position: absolute;
+		display: none;
+		top:120px;
+		width: 150px;
+	    right: 18px;
+		color: #EAEAEA;
+		border:1px solid #EBEBEB;
+	    z-index: 300 !important;
+	    box-shadow:0px 5px 5px rgba(0,0,0,.2);
+	}
+ul#profile-support i::before{
+	content: '\f077';
+	font-size: 25px;
+	font-weight: 1px; 
+
+	border-color: transparent transparent rgba(0,0,0,.16);
+	position: absolute;
+	left: 100px;
+	top:-20px;
+	border-bottom: 2px solid white;
+	bottom: 215px;
+
+}
+#prof-pic{
+	margin: 0;
+	padding: 0;
+	border-radius: 100px;
+	width: 4%;
+	position: absolute;	
+	right: 180px;
+	top: 20px;
+
+
+}
+
 
 
 
