@@ -11,6 +11,6 @@
 
 `LINK TO HOST`: https://umdcom.000webhostapp.com/
 
-`LINK TO REPORT` : https://github.com/iuthub/design-project-avengers/raw/master/project_report.pdf
+`LINK TO REPORT` : https://github.com/iuthub/design-project-avengers/blob/master/repo.pdf
 
 `THE MAIN FOLDER OF THE PROJECT IS` : movie
