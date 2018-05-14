@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/profile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Profile-winx</title>
+	<title></title>
+
+</head>
+<body>
+
+
+
+
+		<header>
+		<div class="icon">
+			<ul class="main">
+
+				<li id="brand">
+						<img src="img/LOGO.png" alt="logo">
+
+					</li>
+				
+
+							<li class="ham">
+								<i class="fa fa-bars"></i>
+							</li>
+						<li id="search">
+						<span class="icons">
+	         <i class="fa fa-search"></i>
+	         		
+	         	</span>					
+							<!--dropdown-->
+							<ul class="sub">
+
+								<div class="container">
+									<div class="row">
+										<div class="col-md-3">
+									  	<ul class="content" id="pad">
+											<ol>Type</ol>
+											<ol class="text">
+											<input type="radio" name="movies" value="movies"> Movies
+											</ol>
+											<ol>
+											<input type="radio" name="movies" value="movies"> TV Series
+											</ol>
+											<ol>
+											<input type="radio" name="movies" value="movies"> New Arrivals
+											</ol>
+											<ol>
+											<input type="radio" name="movies" value="movies"> Documentory
+											</ol>
+									  </ul>
+									</div>
+
+								<div class="col-md-3">
+								<ul class="content">
+								<ol>Country</ol>
+								<ol>
+									<select class="custom-select" style="width:200px;">
+										    <option value="0">All Countries</option>
+										    <option value="1">Argentina</option>
+										    <option value="2">Austrakia</option>
+										    <option value="3">Bahamas</option>
+										    <option value="4">Belgium</option>
+										    <option value="5">Brazil</option>
+										    <option value="6">Canada</option>
+										    <option value="7">Chile</option>
+										    <option value="8">Chine</option>
+										    <option value="9">Denmark</option>
+										    <option value="10">Ecuador</option>
+										    <option value="11">France</option>
+										    <option value="12">Greece</option>
+								</select>
+								</ol>
+
+
+
+
+								</ul>
+								</div><!--col-md-6-->
+
+
+
+							<div class="col-md-3">
+								<ul class="content">
+								<ol>Genres</ol>
+								<ol>
+									<select class="custom-select" style="width:200px;">
+										    <option value="0">All Genres</option>
+										    <option value="1">Argentina</option>
+										    <option value="2">Austrakia</option>
+										    <option value="3">Bahamas</option>
+										    <option value="4">Belgium</option>
+										    <option value="5">Brazil</option>
+										    <option value="6">Canada</option>
+										    <option value="7">Chile</option>
+										    <option value="8">Chine</option>
+										    <option value="9">Denmark</option>
+										    <option value="10">Ecuador</option>
+										    <option value="11">France</option>
+										    <option value="12">Greece</option>
+								</select>
+								</ol>
+
+								</ul>
+								</div><!--col-md-6-->
+
+							<div class="col-md-3">
+							
+								<ul class="content">
+								<ol>Genres</ol>
+								<ol>
+								<div class="slidecontainer">
+ 								 <input type="range" min="1" max="100" value="50">
+ 								</div> 								
+								</ol>
+								</ul>
+								</div><!--col-md-6-->
+
+									</div><!--row-->
+									</div><!--container-->
+								</ul><!--end class sub-->
+							</li>
+						</ul>
+					</div>
+
+		</header>
+
+		<nav class="nav">
+			<ul class="nav-i">
+			<li>
+				<a href="#">
+					<span class="fa fa-tv icon">
+					</span>
+					<p class="watch">TV Series</p>
+				</a>
+			</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-film icon">
+							</span>
+							<p class="watch">Movies</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-desktop icon">
+							</span>
+							<p class="watch">Playlist</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span  class="fa fa-ticket icon">
+							</span>	
+							<p class="watch">New Arrivals</p>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="fa fa-clock-o icon">
+							</span>
+							<p class="watch">
+									Coming Soon
+								</p>
+						</a>
+					</li>
+			</ul>
+		</nav>
+
+
+<!--content-->
+					<aside class="padding">
+				
+						<ul class="content">
+							<li>
+								<a href="profile.html">
+									Account Settings
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Payment Info
+								</a>
+							</li>
+						</ul>
+					</aside>
+
+
+			<section>
+				
+								<div class="container">
+									<div class="row">
+										<div class="col-md-3">
+											<div id="profile_pic">
+											<img src="img/account-profile.jpg" alt="account-profile"/>
+											</div>
+												<p class="btn-centrilize">
+													<a href="#" class="btn btn-pro">
+														Change Profile Picture
+													</a>
+												</p>
+												<p class="btn-centrilize">
+													<a href="#" class="btn">
+														Delete photo
+													</a>
+												</p>
+											
+										</div><!--col-md-3-->
+
+									<div class="col-md-9">
+
+										<form id="account-info">
+											<h5>General Information</h5>
+											<p class="take-inf">
+										
+											By letting us know your name, we can make our support experience much more personal.
+												
+											</p>
+										</form>
+																	
+								<div class="row">
+									<div class="col-md-3">
+										<div class="info">
+										<label for="name">First Name:</label>
+										<input type="text" name="first_name" value="Malika" class="input">
+									 </div>
+									</div><!--col-md-3-->	
+
+
+										<div class="col-md-3">
+										<div class="info">
+										<label for="name">Last Name:</label>	
+										<input type="text" name="last_name" value="Sadullaeva" class="input">
+									 </div>
+									</div><!--col-md-3-->
+
+									<div class="col-md-3">
+										<div class="info">
+										<label for="name">Country:</label>
+										<select class="width">
+											  <option value="denmark" class="input">Denmark</option>
+											  <option value="uzbekistan" class="input">Uzbekistan</option>
+											  <option value="ecuador" class="input">Ecuador</option>
+											  <option value="france" class="input">France</option>
+											</select>
+									 </div>
+									</div><!--col-md-3-->
+								</div>
+										<hr/>
+
+									<h5>Account Information</h5>
+											<p class="take-inf">
+											You can change the email address you use here.
+											</p>
+
+											<div class="row">
+												<div class="col-md-6">
+												<div class="info">
+													<label for="e-mail">E-mail</label>
+													<input type="text" name="last_name" value="m.sadullaeva@outlook.com" class="input width">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="info">
+														<p class="btn-top">
+															<a href="#" class="btn">Change E-mail</a>
+														</p>
+													</div>
+													
+												</div>
+											</div>
+												<hr/>
+									
+											<h5>Change Password</h5>
+											<p class="take-inf">
+											You can change the password you use for your account here.
+											</p>
+
+
+
+
+														<!---->
+
+
+								<div class="row">
+									<div class="col-md-3">
+										<div class="info">
+										<label for="name">Current Password:</label>
+										<input type="password" name="password" value="password" class="input">
+									 </div>
+									</div><!--col-md-3-->	
+
+
+										<div class="col-md-3">
+										<div class="info">
+										<label for="name">New Password:</label>	
+										<input type="text" name="last_name" value="Minimum of 6 characters" class="input">
+									 </div>
+									</div><!--col-md-3-->
+
+									<div class="col-md-3">
+										<div class="info">
+										<label for="name">Confirm:</label>	
+										<input type="text" name="last_name" value="Confirm New Password" class="input">
+									 </div>
+									</div><!--col-md-3-->
+								</div>
+
+
+								<h5>Preferred Genres</h5>
+											<p class="take-inf">
+											Pick your favorite genres for content.</p>
+											<ul class="choose-img">
+										
+											<li class="border">
+												<img src="img/drama.png" class="img-choose">
+												<h6>Drama</h6>
+												</li>
+												<li class="border">
+												<img src="img/comedy.png" class="img-choose">
+												<h6>Comedy</h6>
+												</li>
+												
+												<li class="border">
+												<img src="img/action.png" class="img-choose">
+												<h6>Action</h6>
+												</li>
+
+												<li class="border">
+												<img src="img/romance.png" class="img-choose">
+												<h6>Romance</h6>
+												</li>
+
+												<li class="border">
+												<img src="img/horror.png" class="img-choose">
+												<h6>Horror</h6>
+												</li>
+												<li class="border">
+												<img src="img/fantasy.png" class="img-choose">
+												<h6>Fantasy</h6>
+												</li>
+											</ul>
+
+
+									<ul class="choose-img">
+										
+											<li class="border">
+												<img src="img/sci-fi.png" class="img-choose">
+												<h6>Sci-Fi</h6>
+												</li>
+												<li class="border">
+												<img src="img/thriller.png" class="img-choose">
+												<h6>Thriller</h6>
+												</li>
+												
+												<li class="border">
+												<img src="img/western.png" class="img-choose">
+												<h6>Western</h6>
+												</li>
+
+												<li class="border">
+												<img src="img/adventure.png" class="img-choose">
+												<h6>Adventure</h6>
+												</li>
+
+												<li class="border">
+												<img src="img/animation.png" class="img-choose">
+												<h6>Animation</h6>
+												</li>
+												<li class="border">
+												<img src="img/documentary.png" class="img-choose">
+												<h6>Documentory</h6>
+												</li>
+											</ul>
+
+									<hr/>
+									<p>
+										<a href="#" class="btn btn-pro">Save Changes</a>
+									</p>
+									</div><!--col-md-9-->
+												
+									</div>
+									</div>
+
+			</section>
+
+
+	
+	
+<script src="js/profile.js"></script>
+</body>
+</html>
