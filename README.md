@@ -1,9 +1,5 @@
 # Internet Programming: Design Project Assignment
 
-Find `ip_design_project.pdf` file in this folder, and refer to all the instructions given there. 
-
-You have to submit your project into this repository before 06.05.2018.
-
 `TEAM NAME`: Avengers
 
 `TEAM MEMBERS`:
@@ -16,3 +12,5 @@ You have to submit your project into this repository before 06.05.2018.
 `LINK TO HOST`: https://umdcom.000webhostapp.com/
 
 `LINK TO REPORT` : https://github.com/iuthub/design-project-avengers/raw/master/project_report.pdf
+
+`THE MAIN FOLDER OF THE PROJECT IS` : movie
